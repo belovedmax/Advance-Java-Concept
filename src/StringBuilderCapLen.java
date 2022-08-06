@@ -1,3 +1,4 @@
+
 public class StringBuilderCapLen {
     public static void main(String[] args) {
         StringBuilder buffer = new StringBuilder("Hello, how are you?");
@@ -45,11 +46,19 @@ public class StringBuilderCapLen {
 
         System.out.println("delete hello from buffer: " + buffer.delete(0,7));
 
+        //using deleteChars
 
+        System.out.println("Using deleteChars: " + buffer.deleteCharAt(16));
 
+        //tokenizing strings
 
+        String [] tokens = {"How","are","you","doing","today"};
 
+        System.out.println("This is a sentence with " + tokens.length + " element");
 
+        System.out.println("The tokens are: ");
+        for(String token : tokens)
+            System.out.println( token);
 
 
 
